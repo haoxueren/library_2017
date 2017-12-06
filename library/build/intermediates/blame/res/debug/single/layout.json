@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_part_chronometer.xml"
-    },
-    {
         "merged": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
