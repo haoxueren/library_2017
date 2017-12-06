@@ -1,2 +1,6 @@
 # library
-an android develop tools library
+android develop tools library
+
+# init library
+
+ContextHelper.initLibrary(context);
