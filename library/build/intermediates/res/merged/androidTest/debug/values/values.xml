@@ -279,6 +279,7 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <dimen name="height_title">50dp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
@@ -304,6 +305,7 @@
     <dimen name="notification_top_pad_large_text">5dp</dimen>
     <dimen name="padding_default">16dp</dimen>
     <dimen name="textSize_big">16sp</dimen>
+    <dimen name="textSize_large">18sp</dimen>
     <dimen name="textSize_normal">14sp</dimen>
     <dimen name="textSize_small">12sp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>

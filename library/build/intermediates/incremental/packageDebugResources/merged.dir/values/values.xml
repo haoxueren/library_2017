@@ -3,9 +3,11 @@
     <color name="color_black">@android:color/black</color>
     <color name="color_transparent">@android:color/transparent</color>
     <color name="color_white">@android:color/white</color>
+    <dimen name="height_title">50dp</dimen>
     <dimen name="margin_default">16dp</dimen>
     <dimen name="padding_default">16dp</dimen>
     <dimen name="textSize_big">16sp</dimen>
+    <dimen name="textSize_large">18sp</dimen>
     <dimen name="textSize_normal">14sp</dimen>
     <dimen name="textSize_small">12sp</dimen>
     <string name="library_name">Library</string>
