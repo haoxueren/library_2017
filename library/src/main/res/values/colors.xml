@@ -2,5 +2,6 @@
 <resources>
     <color name="color_white">@android:color/white</color><!--白色-->
     <color name="color_black">@android:color/black</color><!--黑色-->
+    <color name="color_red">#FFFF0000</color><!--红色-->
     <color name="color_transparent">@android:color/transparent</color><!--透明-->
 </resources>
