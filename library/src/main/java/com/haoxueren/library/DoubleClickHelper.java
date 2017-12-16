@@ -10,28 +10,26 @@ public class DoubleClickHelper {
     /** 事件首次被触发的时间； */
     private long firstEventTime = 0;
 
-    /** 事件被触发的监听器； */
-    private OnDoubleClickListener listener;
-
     private static DoubleClickHelper doubleClickHelper;
 
     /** 注入事件监听器； */
-    private DoubleClickHelper(OnDoubleClickListener listener) {
-        this.listener = listener;
+    private DoubleClickHelper() {
+
     }
 
-    public static DoubleClickHelper create(OnDoubleClickListener listener) {
+    public static DoubleClickHelper create() {
         if (doubleClickHelper == null) {
-            doubleClickHelper = new DoubleClickHelper(listener);
+            doubleClickHelper = new DoubleClickHelper();
         }
         return doubleClickHelper;
     }
 
 
     /**
-     * 判断两次事件的时间间隔(ms)，小于间隔时间则回调接口；
+     * 判断两次事件的时间间隔(ms)，小于间隔时间则回调接口；<br>
+     * intervalTime 建议值：500ms
      */
-    public void registerEvent(int intervalTime) {
+    public void registerEvent(OnDoubleClickListener listener, int intervalTime) {
         // 判断两次间隔时间是否满足条件；
         if (System.currentTimeMillis() - firstEventTime > intervalTime) {
             // 记录事件首次被触发的时间；
@@ -43,16 +41,5 @@ public class DoubleClickHelper {
         }
     }
 
-    /**
-     * 事件被触发的监听器；
-     */
-    public interface OnDoubleClickListener {
-
-        /** 第一次点击 */
-        void onFirstClick();
-
-        /** 第二次点击 */
-        void onSecondClick();
-    }
 
 }

@@ -4,16 +4,16 @@
         "source": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+        "merged": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "C:\\WorkSpace\\HaoLibrary\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\premade_badge.xml",
