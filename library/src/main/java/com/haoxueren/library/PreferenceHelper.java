@@ -1,10 +1,8 @@
-package com.haoxueren.library.annotation;
+package com.haoxueren.library;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-
-import com.haoxueren.library.ContextHelper;
 
 /**
  * Helper for SharedPreferences

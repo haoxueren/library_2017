@@ -22,4 +22,9 @@ public class DateHelper {
         SimpleDateFormat dateFormat = new SimpleDateFormat(pattern, Locale.CHINA);
         return dateFormat.format(date);
     }
+
+    /** 获取当前时间字符串； */
+    public static String formatToday(String pattern) {
+        return DateHelper.format(new Date(), pattern);
+    }
 }
