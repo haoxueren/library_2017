@@ -26,7 +26,7 @@ public class PBEAlgorithm {
      * PBEWITHSHA1ANDRC2_40
      * PBKDF2WITHHMACSHA1
      */
-    public static final String ALGORITHM = "PBEWithSHA1AndRC2";
+    public static final String ALGORITHM = "PBEWITHMD5andDES";
 
     /**
      * 盐初始化
@@ -100,17 +100,12 @@ public class PBEAlgorithm {
      * 使用PBE算法对数据进行加解密
      * 获取加密后的文本数据
      */
-    public static String encryptText(String data, String password, String salt, int count) {
-        try {
-            byte[] dataBytes = data.getBytes("UTF-8");
-            byte[] saltBytes = salt.getBytes("UTF-8");
-            byte[] encryptBytes = PBEAlgorithm.encrypt(dataBytes, password, saltBytes, count); // 加密数据
-            String base64Text = Base64.encodeToString(encryptBytes, Base64.DEFAULT); // Base64编码
-            return base64Text; // 返回密文
-        } catch (Exception e) {
-            e.printStackTrace();
-            return e.getMessage();
-        }
+    public static String encryptText(String data, String password, String salt, int count) throws Exception {
+        byte[] dataBytes = data.getBytes("UTF-8");
+        byte[] saltBytes = salt.getBytes("UTF-8");
+        byte[] encryptBytes = PBEAlgorithm.encrypt(dataBytes, password, saltBytes, count); // 加密数据
+        String base64Text = Base64.encodeToString(encryptBytes, Base64.DEFAULT); // Base64编码
+        return base64Text; // 返回密文
     }
 
     /**
@@ -122,7 +117,6 @@ public class PBEAlgorithm {
         byte[] dataBytes = data.getBytes("UTF-8");
         byte[] base64Bytes = Base64.decode(dataBytes, Base64.DEFAULT); // Base64解码
         byte[] plainBytes = PBEAlgorithm.decrypt(base64Bytes, password, saltBytes, count); // 解密数据
-        String plainText = new String(plainBytes); // 转换为文本
-        return plainText; // 返回解密后的数据
+        return new String(plainBytes); // 返回解密后的数据
     }
 }
