@@ -1,4 +1,4 @@
-package com.haoxueren.library;
+package com.haoxueren.library.encrypt;
 
 import android.util.Base64;
 
@@ -16,7 +16,7 @@ import javax.crypto.spec.PBEParameterSpec;
  * 使用 PBEWithSHA1AndRC2 算法进行展示
  * 参考资料：http://blog.csdn.net/u011097980/article/details/50125133
  */
-public class PBEAlgorithm {
+public class PBEUtil {
 
     /**
      * JAVA6支持以下任意一种算法
@@ -65,7 +65,7 @@ public class PBEAlgorithm {
      */
     public static byte[] encrypt(byte[] data, String password, byte[] salt, int count) throws Exception {
         // 转换密钥
-        Key key = PBEAlgorithm.toKey(password);
+        Key key = PBEUtil.toKey(password);
         // 实例化PBE参数材料
         PBEParameterSpec paramSpec = new PBEParameterSpec(salt, count);
         // 实例化
@@ -85,7 +85,7 @@ public class PBEAlgorithm {
      */
     public static byte[] decrypt(byte[] data, String password, byte[] salt, int count) throws Exception {
         // 转换密钥
-        Key key = PBEAlgorithm.toKey(password);
+        Key key = PBEUtil.toKey(password);
         // 实例化PBE参数材料
         PBEParameterSpec paramSpec = new PBEParameterSpec(salt, count);
         // 实例化
@@ -103,7 +103,7 @@ public class PBEAlgorithm {
     public static String encryptText(String data, String password, String salt, int count) throws Exception {
         byte[] dataBytes = data.getBytes("UTF-8");
         byte[] saltBytes = salt.getBytes("UTF-8");
-        byte[] encryptBytes = PBEAlgorithm.encrypt(dataBytes, password, saltBytes, count); // 加密数据
+        byte[] encryptBytes = PBEUtil.encrypt(dataBytes, password, saltBytes, count); // 加密数据
         String base64Text = Base64.encodeToString(encryptBytes, Base64.DEFAULT); // Base64编码
         return base64Text; // 返回密文
     }
@@ -116,7 +116,7 @@ public class PBEAlgorithm {
         byte[] saltBytes = salt.getBytes("UTF-8");
         byte[] dataBytes = data.getBytes("UTF-8");
         byte[] base64Bytes = Base64.decode(dataBytes, Base64.DEFAULT); // Base64解码
-        byte[] plainBytes = PBEAlgorithm.decrypt(base64Bytes, password, saltBytes, count); // 解密数据
+        byte[] plainBytes = PBEUtil.decrypt(base64Bytes, password, saltBytes, count); // 解密数据
         return new String(plainBytes); // 返回解密后的数据
     }
 }
