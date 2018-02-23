@@ -23,6 +23,10 @@ public class PreferenceHelper {
                 .edit().putString(key, value).apply();
     }
 
+    public static String getString(String key, String defaultValue) {
+        return PreferenceHelper.getDefaultPreference().getString(key, defaultValue);
+    }
+
     /** 保存boolean类型的值到SharedPreferences */
     public static void putBoolean(String key, boolean value) {
         PreferenceHelper.getDefaultPreference()
@@ -43,5 +47,9 @@ public class PreferenceHelper {
     public static void putInt(String key, int value) {
         PreferenceHelper.getDefaultPreference()
                 .edit().putInt(key, value).apply();
+    }
+
+    public static int getInt(String key, int defaultValue) {
+        return PreferenceHelper.getDefaultPreference().getInt(key, defaultValue);
     }
 }
